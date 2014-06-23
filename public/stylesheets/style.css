@@ -1,0 +1,65 @@
+body {
+  font-family: "Gill Sans", Helvetica, Arial;
+}
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+/* Set up document
+-----------------------------------------------------------------------------*/
+#wrapper {
+  width: 920px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 20px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-bottom-left-radius: 15px;
+  -o-border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -moz-border-bottom-right-radius: 15px;
+  -o-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+  background: #585858;
+}
+header h1 {
+	color:#3BB9FF;
+}
+header nav {
+  width: 960px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+header nav ul {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 0;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 1%;
+}
+header nav ul li a {
+  background: #585858;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 5px 15px 6px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+header nav ul li a:hover {
+  background-color: #db0d5f;
+}

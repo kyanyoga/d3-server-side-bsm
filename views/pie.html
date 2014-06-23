@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>D3 Server-side Pie Demo</title>
+
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 10px;
+      }
+
+      .svg-chart .background {
+        shape-rendering: crispEdges;
+        stroke: #ccc;
+        fill: #fdfdfd;
+        stroke-width: 1px;
+      }
+
+      .svg-chart .bar { fill: #4682B4; }
+    </style>
+
+  </head>
+  <body>
+    <h1>D3 Server-side Demo</h1>
+    <%-
+      barChartHelper.getBarChart({
+        data: fixtureData,
+        width: 400,
+        height: 300,
+        xAxisLabel: '2012',
+        yAxisLabel: 'Views',
+        containerId: 'bar-chart-small'
+      })
+    %>
+    <table border="0">
+    <caption><center>Monthly savings</center></caption>	
+	<tr>
+	<th>Bar Chart 1</th>
+	<th>Bar Chart 2</th>
+	</tr>
+	<tr>
+	<td><%-
+      barChartHelper.getBarChart({
+        data: fixtureData,
+        width: 200,
+        height: 150,
+        xAxisLabel: '2013',
+        yAxisLabel: 'Views',
+        containerId: 'bar-chart-tiny'
+      })
+    %></td>
+	<td><%-
+      barChartHelper.getBarChart({
+        data: fixtureData,
+        width: 200,
+        height: 150,
+        xAxisLabel: '2013',
+        yAxisLabel: 'Views',
+        containerId: 'bar-chart-tiny'
+      })
+    %></td>
+	</tr>
+	</table> 
+    <hr>
+    <%-
+      barChartHelper.getBarChart({
+        data: fixtureData,
+        width: 800,
+        height: 600,
+        xAxisLabel: '2012',
+        yAxisLabel: 'Views',
+        containerId: 'bar-chart-large'
+      })
+    %>
+  </body>
+</html>
