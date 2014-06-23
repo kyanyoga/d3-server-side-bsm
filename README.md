@@ -22,4 +22,4 @@ d3-server-side-bsm
 ==================
 
 Based on d3-server-side-demo with new modifications
->>>>>>> ed1e30513965c8a4f425ed04e97eb9e8498a6c3d
+Added Bar Charts and Pie Charts - Along with Style sheets.
