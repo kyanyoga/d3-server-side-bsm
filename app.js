@@ -14,8 +14,8 @@ var fixtureData = require('./public/data/fixture_data.json');
 //var heatData = require('./public/data/data.tsv');
 
 // call to exported test functions
-app.locals.barChartHelper = require('./public/js/bar_chart_helper');
-app.locals.getTestHtml = require('./public/js/d3test.js');
+// app.locals.barChartHelper = require('./public/js/bar_chart_helper');
+// app.locals.getTestHtml = require('./public/js/d3test.js');
 
 // Load Test Data
 var csvdata = [];
