@@ -16,7 +16,7 @@
 * Clone the repo
 * Install dependencies with `npm install`
 * Run development server with `node app` 
-* go here: [http://localhost:3000/](http://localhost:3000/)
+### go here: [http://localhost:3000/](http://localhost:3000/)
 ==================
 d3-server-side-bsm
 ==================
